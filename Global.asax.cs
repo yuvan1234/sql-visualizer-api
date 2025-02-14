@@ -24,7 +24,7 @@ namespace SQLViz.API
         {
             if (Context.Request.Path.Contains("api/") && Context.Request.HttpMethod == "OPTIONS")
             {
-                Context.Response.AddHeader("Access-Control-Allow-Origin", "http://localhost:5173");
+                Context.Response.AddHeader("Access-Control-Allow-Origin", "*");
                 Context.Response.AddHeader("Access-Control-Allow-Headers", "Content-Type, Accept, X-Requested-With");
                 Context.Response.AddHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
                 Context.Response.AddHeader("Access-Control-Max-Age", "1728000");
